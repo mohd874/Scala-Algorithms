@@ -9,7 +9,7 @@ object TreeSort {
  * 
  * The original code was written by Gary Sieling (see link below). 
  * 
- * Original Source Code: <a href='http://architects.dzone.com/articles/scala-tree-sort-example'> http://architects.dzone.com/articles/scala-tree-sort-example </a>
+ * Original Source Code: <a href='http://garysieling.com/blog/scala-tree-sort-example'> http://garysieling.com/blog/scala-tree-sort-example </a>
  * 
  * I've changed the code so that to make it more generic and reusable
  * 
