@@ -12,24 +12,20 @@ object Test extends App {
   val shuffled = Random.shuffle(((1 to 6000) toList))
 
   //Define comparing function
-  def less(x: Int, y: Int) = x < y //> less: (x: Int, y: Int)Boolean
+  def less(x: Int, y: Int) = x < y 
 
   def sortTest[T: ClassManifest](less: (T, T) => Boolean)(xs: Array[T], sortName: String) {
     //Some algorithms requires a list
-    val xss = List.fromArray(xs)
+    val lst = List.fromArray(xs)
 
     val time = System.nanoTime()
     sortName match {
-      case "BubbleSort" => {
-        BubbleSort(less)(xs)
-      }
-      case "SelectionSort" => {
-        SelectionSort(less)(xs)
-      }
-      case "MergeSort" => MergeSort(less)(xss)
-      case "TreeSort" => TreeSort(less)(xss)
-      case "InsertionSort" => InsertionSort(less)(xss)
-      case "QuickSort" => QuickSort(less)(xss)
+      case "BubbleSort" 	=> 	BubbleSort(less)(xs)
+      case "SelectionSort" 	=> 	SelectionSort(less)(xs)
+      case "MergeSort" 		=>	MergeSort(less)(lst)
+      case "TreeSort" 		=> 	TreeSort(less)(lst)
+      case "InsertionSort" 	=>	InsertionSort(less)(lst)
+      case "QuickSort" 		=> 	QuickSort(less)(lst)
     }
     val elapsed = System.nanoTime() - time
 
