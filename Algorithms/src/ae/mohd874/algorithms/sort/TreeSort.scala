@@ -1,7 +1,9 @@
 package ae.mohd874.algorithms.sort
 
 object TreeSort {
-
+  def apply[T](less: (T, T) => Boolean)(xs: List[T]) = {
+    Node(less)(xs)
+  }
 }
 
 /*

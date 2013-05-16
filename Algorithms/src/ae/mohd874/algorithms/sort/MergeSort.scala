@@ -2,7 +2,7 @@ package ae.mohd874.algorithms.sort
 
 object MergeSort {
 
-  def apply[T](less: (T,T) => Boolean)(xs: List[T]) = {
+  def apply[T](less: (T, T) => Boolean)(xs: List[T]) = {
     msort(less)(xs)
   }
 

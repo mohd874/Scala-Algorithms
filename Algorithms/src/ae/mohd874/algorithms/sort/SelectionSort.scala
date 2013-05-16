@@ -5,12 +5,12 @@ object SelectionSort {
   def apply[T: ClassManifest](less: (T, T) => Boolean)(xs: Array[T]) = {
     selectionSort(less)(xs).toArray
   }
-  
+
   def selectionSort[T: ClassManifest](less: (T, T) => Boolean)(xs: Array[T]): Stream[T] = {
     var swapped = false
     val size = xs.size
-    var min = size-1
-    
+    var min = size - 1
+
     if (size <= 1) {
       xs.toStream
     } else {
