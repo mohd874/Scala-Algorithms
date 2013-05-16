@@ -29,6 +29,7 @@ object Test extends App {
       case "MergeSort" => MergeSort(less)(xss)
       case "TreeSort" => TreeSort(less)(xss)
       case "InsertionSort" => InsertionSort(less)(xss)
+      case "QuickSort" => QuickSort(less)(xss)
     }
     val elapsed = System.nanoTime() - time
 
@@ -47,15 +48,24 @@ object Test extends App {
     println("---------------------\n")
   }
 
+  println("--------- START EASY TEST --------- ")
+  
   sortTest(less)(nums.toArray, "BubbleSort")
   sortTest(less)(nums.toArray, "MergeSort")
   sortTest(less)(nums.toArray, "SelectionSort")
   sortTest(less)(nums.toArray, "TreeSort")
   sortTest(less)(nums.toArray, "InsertionSort")
+  sortTest(less)(nums.toArray, "QuickSort")
 
+  println("--------- EASY TEST FINISHED--------- ")
+  println("--------- START HARD TEST --------- ")
+  
   sortTest(less)(shuffled.toArray, "BubbleSort")
   sortTest(less)(shuffled.toArray, "MergeSort")
   sortTest(less)(shuffled.toArray, "SelectionSort")
   sortTest(less)(shuffled.toArray, "TreeSort")
   sortTest(less)(shuffled.toArray, "InsertionSort")
+  sortTest(less)(shuffled.toArray, "QuickSort")
+  
+  println("--------- TEST HARD FINISHED--------- ")
 }
