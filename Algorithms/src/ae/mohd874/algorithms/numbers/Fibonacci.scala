@@ -26,15 +26,15 @@ object Fibonacci {
 	    nthFibonacci(0, 1, 0)
 	  }
    *
-   * My idea was to create a tail recursive function that uses the f2 aurgument as an accmulator. 
+   * My idea was to create a tail recursive function that uses the f2 argument as an accumulator. 
    * However, the function worked fine except for the first 2 or three numbers. 
-   * I was pissed as I worked on it for few hours. I decisded to look for examples
+   * I was pissed as I worked on it for few hours. I decided to look for examples
    * to see how can I fix it. 
    * 
    * I found on StackOverflow a question about the best way to create fibonacci number. 
    * The answer was like a shockwave that split my mind. 
    * 
-   * So simple and elegent yet very effecint. I could not work on my version anymore.
+   * So simple and elegant yet very efficient. I could not work on my version anymore.
    * 
    * Here I pay my full respect "Jed Wesley-Smith" for the wonderful solution which 
    * I used below.  
